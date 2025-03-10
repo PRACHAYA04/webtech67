@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/Aboutme.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="./Prachaya_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <title>Prachaya</title>
+    </head>
+    <body>
+        <script src="./Prachaya_files/bootstrap.bundle.min.js.download" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+            <a class="nav-link active" href="http://127.0.0.1:5500/Aboutme.html#">About Me</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled">Time Table</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled">My Place</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="http://127.0.0.1:5500/Aboutme.html#">My Friends</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/Aboutme.html#">ศิริชัย ธรรมบันดาล</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/Aboutme.html#">สุกฤษฎิ์ ประสพแก้ว</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5500/Aboutme.html#">รวมพล จิโนต๋า</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="container mt-3">
+            <img src="./Prachaya_files/me.jpg" class="img-thumbnail" alt="รูปตัวเอง" width="250" height="200">
+        </div>
+        <div class="container mt-3">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-primary">
+                        <td>Prachaya</td>
+                        <td>Saptasavee</td>
+                        <td>Prachaya0430@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container mt-3">
+            <div class="alert alert-success">
+                <h2><b>ประวัติการศึกษา</b></h2>
+                <h5>- ประถมศึกษา</h5>
+                <p>โรงเรียนอนุบาลด่านช้าง</p>
+                <h5>- มัธยมศึกษาตอนต้น</h5>
+                <p class="text-dark">โรงเรียนบรรหารแจ่มใส วิทยา3</p>
+                <h5>- มัธยมศึกษาตอนปลาย</h5>
+                <p class="text-dark">โรงเรียนบรรหารแจ่มใส วิทยา3 สายวิทย์-คณิต</p>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="alert alert-success">
+                <h2><b>งานอดิเรก</b></h2>
+                <p class="text-dark">- เตะฟุตบอล</p>
+                <p class="text-dark">- ดูซีรี่</p>
+                <p class="text-dark">- ฟังเพลง</p>
+                <p class="text-dark">- เล่นกีต้า</p>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="alert alert-success">
+                <h2><b>อาหารที่ชอบ</b></h2>
+                <p class="text-dark">- กระเพราหมูกรอบ</p>
+                <p class="text-dark">- ข้าวมันไก่</p>
+                <p class="text-dark">- แกงกะหรี่ทะเล</p>
+                <p class="text-dark">- กุ้งแช่น้ำปลา</p>
+            </div>
+        </div>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
